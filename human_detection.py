@@ -19,6 +19,7 @@ while True:
     image_cv =cv2.imdecode(image_source,-1)
     final_img =cv2.resize(image_cv,(300,400))
     model.predict(source=0, show =True, save=True, conf=0.5, classes=[0])
+    #change image to numpy array
 
     if ord =="q":
         break
